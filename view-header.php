@@ -28,9 +28,6 @@
         <li class="nav-item">
           <a class="nav-link" href="products.php">Products</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="get-result.php">Get Result</a>
-        </li>
       </ul>
     </div>
   </div>
