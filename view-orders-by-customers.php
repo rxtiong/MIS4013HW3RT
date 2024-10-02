@@ -15,16 +15,16 @@
     </thead>
     <tbody>
 <?php
-while ($order = $orders->fetch_assoc())
+while ($customer = $customers->fetch_assoc())
 {
   ?>
   <tr>
-    <td><?php echo $order['order_id'];?></td>
-    <td><?php echo $order['customer_id'];?></td>
-    <td><?php echo $order['first_name'];?></td>
-    <td><?php echo $order['last_name'];?></td>
-    <td><?php echo $order['order_date'];?></td>
-    <td><?php echo $order['total_amount'];?></td>
+    <td><?php echo $customer['order_id'];?></td>
+    <td><?php echo $customer['customer_id'];?></td>
+    <td><?php echo $customer['first_name'];?></td>
+    <td><?php echo $customer['last_name'];?></td>
+    <td><?php echo $customer['order_date'];?></td>
+    <td><?php echo $customer['total_amount'];?></td>
   </tr>
   <?php
 }
