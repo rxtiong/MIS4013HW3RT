@@ -20,7 +20,7 @@ while ($customer = $customers->fetch_assoc())
   ?>
   <tr>
     <td><?php echo $customer['customer_id'];?></td>
-    <td><?php echo $customer['First_name'];?></td>
+    <td><?php echo $customer['first_name'];?></td>
     <td><?php echo $customer['last_name'];?></td>
     <td><?php echo $customer['dob'];?></td>
     <td><?php echo $customer['email'];?></td>
