@@ -11,6 +11,7 @@
       <th>Email</th>
       <th>Phone</th>
       <th>Order ID</th>
+      <th></th>
       </tr>      
     </thead>
     <tbody>
@@ -26,6 +27,7 @@ while ($customer = $customers->fetch_assoc())
     <td><?php echo $customer['email'];?></td>
     <td><?php echo $customer['phone'];?></td>
     <td><?php echo $customer['order_id'];?></td>
+    <td><a href="orders-by-customers.php?id=<?php echo $customer['customer_id'];?>">Orders</a></td>
   </tr>
   <?php
 }
