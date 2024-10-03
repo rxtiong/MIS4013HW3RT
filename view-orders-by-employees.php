@@ -17,8 +17,8 @@ while ($employee = $employees->fetch_assoc())
 {
   ?>
   <tr>
-    <td><?php echo $employee['order_id'];?></td>
     <td><?php echo $employee['employee_id'];?></td>
+    <td><?php echo $employee['order_id'];?></td>
     <td><?php echo $employee['first_name'];?></td>
     <td><?php echo $employee['last_name'];?></td>
   </tr>
