@@ -6,7 +6,8 @@
       <tr>
       <th>Employee ID</th>
       <th>First Name</th>
-      <th>Last Name</th>   
+      <th>Last Name</th>
+      <th></th>
       </tr>      
     </thead>
     <tbody>
@@ -18,6 +19,7 @@ while ($employee = $employees->fetch_assoc())
     <td><?php echo $employee['employee_id'];?></td>
     <td><?php echo $employee['first_name'];?></td>
     <td><?php echo $employee['last_name'];?></td>
+    <td><a href="orders-by-employees.php?id=<?php echo $employee['employee_id'];?>">Orders</a></td>
   </tr>
   <?php
 }
