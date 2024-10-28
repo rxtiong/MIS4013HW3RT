@@ -1,5 +1,5 @@
 <?php
-function selectOrder() {
+function selectOrders() {
         $conn = get_db_connection();
         $stmt = $conn->prepare("select order_id, customer_id, order_date, total_amount, product_id from orders;");
         $stmt->execute();
