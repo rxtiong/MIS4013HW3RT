@@ -11,7 +11,7 @@ function selectOrders() {
 function insertOrder($oCust, $oDate, $oAmount, $oProd, $eid) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("insert into orders ('customer_id','order_date','total_amount','product_id','employee_id')
-                                values (?,?,?,?)");
+                                values (?,?,?,?,?)");
         $stmt->bind_param("ssss", $oCust, $oDate, $oAmount, $oProd, $eid);
         $success = $stmt->execute();
         $conn->close();
