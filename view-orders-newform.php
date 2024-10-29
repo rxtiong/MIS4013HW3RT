@@ -27,8 +27,8 @@
               <input type="text" class="form-control" id="oDate" name="oDate">
             </div>
             <div class="mb-3">
-              <label for="oTotal" class="form-label">Total Amount</label>
-              <input type="text" class="form-control" id="oTotal" name="oTotal">
+              <label for="oAmount" class="form-label">Total Amount</label>
+              <input type="text" class="form-control" id="oAmount" name="oAmount">
             </div>
             <div class="mb-3">
               <label for="oProd" class="form-label">Product Number</label>
