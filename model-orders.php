@@ -12,7 +12,7 @@ function insertOrder($oCust, $oDate, $oAmount, $oProd, $eid) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("insert into orders values ('customer_id','order_date','total_amount','product_id','employee_id')
                                 values (?,?,?,?,?);");
-        $stmt->bind_param("sssss", $oCust, $oDate, $oAmount, $oProd, $eid);
+        $stmt->bind_param("ssdss", $oCust, $oDate, $oAmount, $oProd, $eid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -22,7 +22,7 @@ function updateOrder($oCust, $oDate, $oAmount, $oProd, $eid, $oid) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update orders set 'customer_id' = ?,'order_date'=?,'total_amount'=?,'product_id'=?, 'employee_id'=?
                                 where order_id = ?;");
-        $stmt->bind_param("sssssi", $oCust, $oDate, $oAmount, $oProd, $eid, $oid);
+        $stmt->bind_param("ssdssi", $oCust, $oDate, $oAmount, $oProd, $eid, $oid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
