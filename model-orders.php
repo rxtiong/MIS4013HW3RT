@@ -10,7 +10,7 @@ function selectOrders() {
 
 function insertOrder($oCust, $oDate, $oAmount, $oProd) {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("insert into 'orders' ('customer_id','order_date','total_amount','product_id')
+        $stmt = $conn->prepare("insert into orders ('customer_id','order_date','total_amount','product_id')
                                 values (?,?,?,?)");
         $stmt->bind_param("ssss", $oCust, $oDate, $oAmount, $oProd);
         $success = $stmt->execute();
