@@ -30,7 +30,7 @@ function updateOrder($oCust, $oDate, $oAmount, $oProd, $eid, $oid) {
 
 function deleteOrder($oid) {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from order where order_id=?;");
+        $stmt = $conn->prepare("delete from orders where order_id=?;");
         $stmt->bind_param("i", $oid);
         $success = $stmt->execute();
         $conn->close();
