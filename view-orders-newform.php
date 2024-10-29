@@ -19,8 +19,8 @@
       <div class="modal-body">
         <form method="post" action="">
             <div class="mb-3">
-              <label for="cNumber" class="form-label">Customer Number</label>
-              <input type="text" class="form-control" id="oNumber" name='oNumber'>
+              <label for="oCust" class="form-label">Customer Number</label>
+              <input type="text" class="form-control" id="oCust" name='oCust'>
             </div>
             <div class="mb-3">
               <label for="oDate" class="form-label">Order Date</label>
