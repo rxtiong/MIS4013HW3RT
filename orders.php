@@ -12,8 +12,15 @@ if (isset($_POST['actionType'])) {
   Order Added!</div>';}
       else {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
-      }
-        
+      }      
+    break;
+    
+    case "Delete":
+      if (deleteOrder($_POST['oid']))
+      { echo '<div class="alert alert-success" role="alert">Order Deleted!</div>';}
+      else {
+        echo '<div class="alert alert-danger" role="alert">Error</div>';
+      }      
     break;
   }
 }
