@@ -11,7 +11,7 @@ function selectOrders() {
 function insertOrder($oCust, $oDate, $oAmount, $oProd, $eid) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("insert into orders values ('customer_id','order_date','total_amount','product_id','employee_id')
-                                values (?,?,?,?,?)");
+                                values (?,?,?,?,?);");
         $stmt->bind_param("ssss", $oCust, $oDate, $oAmount, $oProd, $eid);
         $success = $stmt->execute();
         $conn->close();
@@ -21,7 +21,7 @@ function insertOrder($oCust, $oDate, $oAmount, $oProd, $eid) {
 function updateOrder($oCust, $oDate, $oAmount, $oProd, #eid, $oid) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update orders set 'customer_id' = ?,'order_date'=?,'total_amount'=?,'product_id'=?, 'employee_id'=?
-                                where order_id = ?");
+                                where order_id = ?;");
         $stmt->bind_param("sssssi", $oCust, $oDate, $oAmount, $oProd, $eid, $oid);
         $success = $stmt->execute();
         $conn->close();
@@ -30,7 +30,7 @@ function updateOrder($oCust, $oDate, $oAmount, $oProd, #eid, $oid) {
 
 function deleteOrder($oid) {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from order where order_id=?");
+        $stmt = $conn->prepare("delete from order where order_id=?;");
         $stmt->bind_param("i", $oid);
         $success = $stmt->execute();
         $conn->close();
