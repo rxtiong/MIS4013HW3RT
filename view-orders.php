@@ -17,7 +17,8 @@
       <th>Customer ID</th>
       <th>Date</th>
       <th>Total Amount</th>
-      <th>Product ID</th>      
+      <th>Product ID</th>  
+      <th>Employee ID</th> 
       </tr>      
     </thead>
     <tbody>
@@ -31,6 +32,7 @@ while ($order = $orders->fetch_assoc())
     <td><?php echo $order['order_date'];?></td>
     <td><?php echo $order['total_amount'];?></td>
     <td><?php echo $order['product_id'];?></td>
+    <td><?php echo $order['employee_id'];?></td>
   </tr>
   <?php
 }
