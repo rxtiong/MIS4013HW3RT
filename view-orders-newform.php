@@ -34,6 +34,7 @@
               <label for="oProd" class="form-label">Product Number</label>
               <input type="text" class="form-control" id="oProd" name="oProd">
             </div>
+            <input type="hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Save</button>
       </form>
       </div>      
