@@ -17,12 +17,26 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+        <form method="post" action="">
+            <div class="mb-3">
+              <label for="cNumber" class="form-label">Customer Number</label>
+              <input type="text" class="form-control" id="oNumber" name='oNumber'>
+            </div>
+            <div class="mb-3">
+              <label for="oDate" class="form-label">Order Date</label>
+              <input type="text" class="form-control" id="oDate" name="oDate">
+            </div>
+            <div class="mb-3">
+              <label for="oTotal" class="form-label">Total Amount</label>
+              <input type="text" class="form-control" id="oTotal" name="oTotal">
+            </div>
+            <div class="mb-3">
+              <label for="oProd" class="form-label">Product Number</label>
+              <input type="text" class="form-control" id="oProd" name="oProd">
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+      </div>      
     </div>
   </div>
 </div>
