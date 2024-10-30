@@ -14,6 +14,15 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-danger" role="alert">Error</div>';
       }      
     break;
+
+    case "Edit":
+      if (updateOrder($_POST['oCust'], $_POST['oDate'], $_POST['oAmount'], $_POST['oProd'], $_POST['eid'], $_POST['oid']))
+      { echo '<div class="alert alert-success" role="alert">
+  Order Edited!</div>';}
+      else {
+        echo '<div class="alert alert-danger" role="alert">Error</div>';
+      }      
+    break;
     
     case "Delete":
       if (deleteOrder($_POST['oid']))
