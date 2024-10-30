@@ -20,7 +20,7 @@ function insertOrder($oCust, $oDate, $oAmount, $oProd, $eid) {
 
 function updateOrder($oCust, $oDate, $oAmount, $oProd, $eid, $oid) {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update orders set 'customer_id' = ?,'order_date'=?,'total_amount'=?,'product_id'=?, 'employee_id'=?
+        $stmt = $conn->prepare("update orders set customer_id = ?,order_date=?,total_amount=?,product_id=?, employee_id=?
                                 where order_id = ?;");
         $stmt->bind_param("ssdssi", $oCust, $oDate, $oAmount, $oProd, $eid, $oid);
         $success = $stmt->execute();
