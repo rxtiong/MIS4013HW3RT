@@ -19,25 +19,25 @@
         <form method="post" action="">
             <div class="mb-3">
               <label for="oCust<?php echo $order['customer_id']; ?>" class="form-label">Customer Number</label>
-              <input type="text" class="form-control" id="oCust" name='oCust' value=""<?php echo $order['customer_id']; ?>>
+              <input type="text" class="form-control" id="oCust" name='oCust' value="<?php echo $order['customer_id']; ?>">
             </div>
             <div class="mb-3">
               <label for="oDate<?php echo $order['order_date']; ?>" class="form-label">Order Date</label>
-              <input type="text" class="form-control" id="oDate" name="oDate" value=""<?php echo $order['order_date']; ?>>
+              <input type="text" class="form-control" id="oDate" name="oDate" value="<?php echo $order['order_date']; ?>">
             </div>
             <div class="mb-3">
               <label for="oAmount<?php echo $order['total_amount']; ?>" class="form-label">Total Amount</label>
-              <input type="text" class="form-control" id="oAmount" name="oAmount" value=""<?php echo $order['total_amount']; ?>>
+              <input type="text" class="form-control" id="oAmount" name="oAmount" value="<?php echo $order['total_amount']; ?>">
             </div>
             <div class="mb-3">
               <label for="oProd<?php echo $order['product_id']; ?>" class="form-label">Product Number</label>
-              <input type="text" class="form-control" id="oProd" name="oProd" value=""<?php echo $order['product_id']; ?>>
+              <input type="text" class="form-control" id="oProd" name="oProd" value="<?php echo $order['product_id']; ?>">
             </div>
             <div class="mb-3">
               <label for="eid<?php echo $order['employee_id']; ?>" class="form-label">Employee ID</label>
-              <input type="text" class="form-control" id="eid" name="eid" value=""<?php echo $order['product_id']; ?>>
+              <input type="text" class="form-control" id="eid" name="eid" value="<?php echo $order['product_id']; ?>">
             </div>
-            <input type="hidden" name="oid" value=""<?php echo $order['order_id']; ?>>
+            <input type="hidden" name="oid" value="<?php echo $order['order_id']; ?>">
             <input type="hidden" name="actionType" value="Edit">
             <button type="submit" class="btn btn-primary">Save</button>
       </form>
