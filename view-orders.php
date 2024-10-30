@@ -36,7 +36,11 @@ while ($order = $orders->fetch_assoc())
     <td><?php echo $order['total_amount'];?></td>
     <td><?php echo $order['product_id'];?></td>
     <td><?php echo $order['employee_id'];?></td>
-    <td></td>
+    <td>
+      <?php
+        include "view-orders-editform.php";
+      ?>
+    </td>
     <td>   
       <form method="post" action="">
           <input type="hidden" name="oid" value="<?php echo $order['order_id']; ?>">
