@@ -32,7 +32,7 @@
             </div>
             <div class="mb-3">
               <label for="pPrice<?php echo $product['price']; ?>" class="form-label">Price</label>
-              <input type="text" class="form-control" id="oPrice" name="oPrice" value="<?php echo $product['price']; ?>">
+              <input type="text" class="form-control" id="pPrice" name="pPrice" value="<?php echo $product['price']; ?>">
             </div>
             
             <input type="hidden" name="pid" value="<?php echo $product['product_id']; ?>">
