@@ -18,7 +18,7 @@ function insertProduct($pOrder, $pName, $pCategory, $pPrice) {
         return $success;
 }
 
-function updateProuct($pOrder, $pName, $pCategory, $pPrice, $pid) {
+function updateProduct($pOrder, $pName, $pCategory, $pPrice, $pid) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update products set order_id = ?, product_name=?,category=?,price=?
                                 where product_id = ?;");
