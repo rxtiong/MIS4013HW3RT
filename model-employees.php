@@ -10,7 +10,7 @@ function selectEmployees() {
 
 function insertEmployee($eFName, $eLName) {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("insert into employee (first_name, last_name)
+        $stmt = $conn->prepare("insert into employees (first_name, last_name)
                                 values (?,?);");
         $stmt->bind_param("ss", $eFName, $eLName);
         $success = $stmt->execute();
