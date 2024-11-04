@@ -23,7 +23,7 @@
             </div>
           
             <div class="mb-3">
-              <label for="eLName<?php echo $employee['employee_name']; ?>" class="form-label">Last Name</label>
+              <label for="eLName<?php echo $employee['last_name']; ?>" class="form-label">Last Name</label>
               <input type="text" class="form-control" id="eLName" name="eLName" value="<?php echo $employee['last_name']; ?>">
             </div>            
             
