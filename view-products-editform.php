@@ -19,7 +19,7 @@
         <form method="post" action="">
             <div class="mb-3">
               <label for="pOrder<?php echo $product['order_id']; ?>" class="form-label">Order Number</label>
-              <input type="text" class="form-control" id="pOrder" name='pOrder' value="<?php echo $product['product_id']; ?>">
+              <input type="text" class="form-control" id="pOrder" name='pOrder' value="<?php echo $product['order_id']; ?>">
             </div>
           
             <div class="mb-3">
