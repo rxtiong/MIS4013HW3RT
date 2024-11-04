@@ -26,6 +26,10 @@
               <input type="text" class="form-control" id="cLName" name="cLName" value="<?php echo $customer['last_name']; ?>">
             </div>
             <div class="mb-3">
+              <label for="cdob<?php echo $customer['dob']; ?>" class="form-label">DOB</label>
+              <input type="text" class="form-control" id="cdob" name="cdob" value="<?php echo $customer['dob']; ?>">
+            </div>
+            <div class="mb-3">
               <label for="cEmail<?php echo $customer['email']; ?>" class="form-label">Email</label>
               <input type="text" class="form-control" id="cEmail" name="cEmail" value="<?php echo $customer['email']; ?>">
             </div>
