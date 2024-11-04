@@ -20,7 +20,7 @@ function insertProduct($pOrder, $pName, $pCategory, $pPrice) {
 
 function updateProuct($pOrder, $pName, $pCategory, $pPrice, $pid) {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update orders set order_id = ?, product_name=?,category=?,price=?
+        $stmt = $conn->prepare("update products set order_id = ?, product_name=?,category=?,price=?
                                 where product_id = ?;");
         $stmt->bind_param("sssdi", $pOrder, $pName, $pCategory, $pPrice, $pid);
         $success = $stmt->execute();
