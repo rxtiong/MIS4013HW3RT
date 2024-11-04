@@ -8,7 +8,7 @@ function selectCustomers() {
         return $result;
 }
 
-function inserCustomer($cFName, $cLName, $cdob, $cEmail, $cPhone, $cOrder) {
+function insertCustomer($cFName, $cLName, $cdob, $cEmail, $cPhone, $cOrder) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("insert into customers (first_name, last_name, dob, email, phone, order_id)
                                 values (?,?,?,?,?,?);");
