@@ -14,11 +14,11 @@
     <thead>
       <tr>
       <th>Order ID</th>
+      <th>Employee ID</th>
       <th>Customer ID</th>
       <th>Date</th>
       <th>Total Amount</th>
-      <th>Product ID</th>  
-      <th>Employee ID</th> 
+      <th>Product ID</th>         
         <th></th>
         <th></th>
         <th></th>
@@ -31,11 +31,12 @@ while ($order = $orders->fetch_assoc())
   ?>
   <tr>
     <td><?php echo $order['order_id'];?></td>
+    <td><?php echo $order['employee_id'];?></td>
     <td><?php echo $order['customer_id'];?></td>
     <td><?php echo $order['order_date'];?></td>
     <td><?php echo $order['total_amount'];?></td>
     <td><?php echo $order['product_id'];?></td>
-    <td><?php echo $order['employee_id'];?></td>
+    
     <td>
       <?php
         include "view-orders-editform.php";
