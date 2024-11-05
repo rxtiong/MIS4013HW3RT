@@ -8,21 +8,21 @@ function selectOrders() {
         return $result;
 }
 
-function insertOrder($oCust, $oDate, $oAmount, $oProd, $eid) {
+function insertOrder($eid, $oCust, $oDate, $oAmount, $oProd) {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("insert into orders (customer_id, order_date, total_amount, product_id, employee_id)
+        $stmt = $conn->prepare("insert into orders (employee_id, customer_id, order_date, total_amount, product_id)
                                 values (?,?,?,?,?);");
-        $stmt->bind_param("ssdss", $oCust, $oDate, $oAmount, $oProd, $eid);
+        $stmt->bind_param("ssdss", $eid, $oCust, $oDate, $oAmount, $oProd);
         $success = $stmt->execute();
         $conn->close();
         return $success;
 }
 
-function updateOrder($oCust, $oDate, $oAmount, $oProd, $eid, $oid) {
+function updateOrder($eid, $oCust, $oDate, $oAmount, $oProd, $oid) {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update orders set customer_id = ?,order_date=?,total_amount=?,product_id=?, employee_id=?
+        $stmt = $conn->prepare("update orders set employee_id=?, customer_id = ?,order_date=?,total_amount=?,product_id=? 
                                 where order_id = ?;");
-        $stmt->bind_param("ssdssi", $oCust, $oDate, $oAmount, $oProd, $eid, $oid);
+        $stmt->bind_param("sssdsi", $eid, $oCust, $oDate, $oAmount, $oProd, $oid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
