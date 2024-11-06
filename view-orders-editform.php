@@ -19,7 +19,11 @@
         <form method="post" action="">
           <div class="mb-3">
               <label for="eid<?php echo $order['employee_id']; ?>" class="form-label">Employee ID</label>
-              <input type="text" class="form-control" id="eid" name="eid" value="<?php echo $order['product_id']; ?>">
+    <?php 
+      $employeeList = selectEmployeesForInput(); 
+      $selectedEmployee = $order['employee_id'];
+      include "view-employee-input-list.php";
+    ?>
           </div>  
           <div class="mb-3">
               <label for="oCust<?php echo $order['customer_id']; ?>" class="form-label">Customer Number</label>
