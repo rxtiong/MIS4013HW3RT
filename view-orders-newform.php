@@ -20,7 +20,10 @@
         <form method="post" action="">
             <div class="mb-3">
               <label for="eid" class="form-label">Employee ID</label>
-              <input type="text" class="form-control" id="eid" name="eid">
+    <?php 
+      $employeeList = selectEmployeesForInput(); 
+      include "view-employee-input-list.php";
+    ?>
             </div>
             <div class="mb-3">
               <label for="oCust" class="form-label">Customer Number</label>
