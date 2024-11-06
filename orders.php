@@ -7,7 +7,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-      if (insertOrder($_POST['oCust'],$_POST['eid'] $_POST['oDate'], $_POST['oAmount'], $_POST['oProd']))
+      if (insertOrder($_POST['oCust'],$_POST['eid'], $_POST['oDate'], $_POST['oAmount'], $_POST['oProd']))
       { echo '<div class="alert alert-success" role="alert">
   Order Added!</div>';}
       else {
