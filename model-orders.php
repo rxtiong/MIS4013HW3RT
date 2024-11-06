@@ -31,7 +31,7 @@ function insertOrder($eid, $oCust, $oDate, $oAmount, $oProd) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("insert into orders (employee_id, customer_id, order_date, total_amount, product_id)
                                 values (?,?,?,?,?);");
-        $stmt->bind_param("ssdss", $eid, $oCust, $oDate, $oAmount, $oProd);
+        $stmt->bind_param("sssds", $eid, $oCust, $oDate, $oAmount, $oProd);
         $success = $stmt->execute();
         $conn->close();
         return $success;
