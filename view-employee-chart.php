@@ -1,10 +1,40 @@
+<h1>Employee Chart</h1>
 
-  <div class="col">
-    <h1>Employee Chart</h1>
-  </div>
+<div>
+  <canvas id="myChart"></canvas>
+</div>
 
-<?php
-while ($employee = $employees->fetch_assoc())
-{}
-  ?>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
   
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+    datasets: [{
+        data: [
+          <?php
+              while ($employee = $employees->fetch_assoc())
+              {
+                echo $employee['NumOfOrders'] , ", ";
+              }
+          ?>
+        ]
+    }],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+        <?php
+              $employee = selectEmployees();
+              while ($employee = $employees->fetch_assoc())
+              {
+                echo "'", $employee['first_name'] , $employee['last_name'] , "', ";
+              }
+          ?>
+    ]
+},
+    });
+</script>
