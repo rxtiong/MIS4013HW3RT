@@ -34,6 +34,9 @@
         <li class="nav-item">
           <a class="nav-link" href="employees-with-orders.php">Employees with orders</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="employee-chart.php">Employee Chart</a>
+        </li>
       </ul>
     </div>
   </div>
