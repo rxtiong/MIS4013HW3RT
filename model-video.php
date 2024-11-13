@@ -1,12 +1,12 @@
 <?php
 // Ensure a video ID is passed to the script
-if (!isset($_GET['coffee-video']) || empty($_GET['coffe-video'])) {
+if (!isset($_GET['coffee-video']) || empty($_GET['coffee-video'])) {
     echo "Error: No video ID provided.";
     exit;
 }
 
 // Sanitize the input to prevent security issues
-$video_id = htmlspecialchars($_GET['coffe-video'], ENT_QUOTES, 'UTF-8');
+$coffee-video = htmlspecialchars($_GET['coffee-video'], ENT_QUOTES, 'UTF-8');
 ?>
 
 <!DOCTYPE html>
