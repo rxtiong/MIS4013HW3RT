@@ -31,7 +31,7 @@
               $employees = selectEmployees();
               while ($employee = $employees->fetch_assoc())
               {
-                echo "'", $employee['first_name'] , $employee['last_name'] , "', ";
+                echo "'", $employee['first_name'] , " ", $employee['last_name'] , "', ";
               }
           ?>
     ]
