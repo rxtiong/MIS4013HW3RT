@@ -6,7 +6,7 @@ if (!isset($_GET['coffeeVideo']) || empty($_GET['coffeeVideo'])) {
 }
 
 // Sanitize the input to prevent security issues
-$coffee-video = htmlspecialchars($_GET['coffeeVideo'], ENT_QUOTES, 'UTF-8');
+$coffeeVideo = htmlspecialchars($_GET['coffeeVideo'], ENT_QUOTES, 'UTF-8');
 ?>
 
 <!DOCTYPE html>
