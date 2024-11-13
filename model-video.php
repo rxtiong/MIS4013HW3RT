@@ -33,7 +33,7 @@ $coffeeVideo = htmlspecialchars($_GET['coffeeVideo'], ENT_QUOTES, 'UTF-8');
     <iframe
         width="640"
         height="360"
-        src="https://www.youtube.com/embed/<?php echo $coffeeVideo; ?>"
+        src="https://www.youtube.com/watch?v=0jIeCAOkgcQ<?php echo $coffeeVideo; ?>"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
