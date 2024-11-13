@@ -37,6 +37,9 @@
         <li class="nav-item">
           <a class="nav-link" href="employee-chart.php">Employee Chart</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="video.php">Coffee Video</a>
+        </li>
       </ul>
     </div>
   </div>
