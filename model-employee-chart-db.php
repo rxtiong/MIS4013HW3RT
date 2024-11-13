@@ -1,6 +1,6 @@
 <?php
 function selectEmployees() {
-        $conn = get_db_connection();
+       try{ $conn = get_db_connection();
         $stmt = $conn->prepare("select first_name, last_name, count(order_id) as NumOfOrders
                                 from employees e join 
                                 orders o on e.employee_id=o.employee_id
@@ -12,5 +12,6 @@ function selectEmployees() {
 } catch (Exception $e) {
   $conn -> close(); 
   throw $e;
+}
 }
 ?>
