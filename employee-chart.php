@@ -7,6 +7,6 @@ include "view-header.php";
 
 
 $employees = selectEmployees();
-include "view-employees-chart.php";
+include "view-employee-chart.php";
 include "view-footer.php";
 ?>
