@@ -1,12 +1,12 @@
 <?php
 // Ensure a video ID is passed to the script
-if (!isset($_GET['coffee-video']) || empty($_GET['coffee-video'])) {
+if (!isset($_GET['coffeeVideo']) || empty($_GET['coffeeVideo'])) {
     echo "Error: No video ID provided.";
     exit;
 }
 
 // Sanitize the input to prevent security issues
-$coffee-video = htmlspecialchars($_GET['coffee-video'], ENT_QUOTES, 'UTF-8');
+$coffee-video = htmlspecialchars($_GET['coffeeVideo'], ENT_QUOTES, 'UTF-8');
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ $coffee-video = htmlspecialchars($_GET['coffee-video'], ENT_QUOTES, 'UTF-8');
     <iframe
         width="640"
         height="360"
-        src="https://www.youtube.com/embed/<?php echo $coffee-video; ?>"
+        src="https://www.youtube.com/embed/<?php echo $coffeeVideo; ?>"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
