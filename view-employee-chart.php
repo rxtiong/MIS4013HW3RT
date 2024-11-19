@@ -34,7 +34,10 @@
                 echo "'", $employee['first_name'] , " ", $employee['last_name'] , "', ";
               }
           ?>
-    ]
-},
+    ]   
+    },
+    options: {
+      responsive: true,         // Ensure the chart is responsive
+      maintainAspectRatio: false,
     });
 </script>
