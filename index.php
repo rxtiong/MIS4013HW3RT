@@ -2,7 +2,8 @@
 $pageTitle = "Home";
 include "view-header.php";
 ?>
-    <h1>Coffee Shop Statistics</h1>
+    <h1>Coffee Shop</h1>
+<img src="coffee.jgp" style="height:300px;" />
     <p>This webpage shows customer data, order information, product information, and employee information and data. Customers have one order and employees have one order, but an order 
     can have multiple customers and/or employees. Orders contain one product, but products can be in multiple orders.</p>
 
