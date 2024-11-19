@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar navbar-expand-lg" style="background-color: #71503a; font-color: #ffffff;">
+      <nav class="navbar navbar-expand-lg" style="background-color: #c4a484; font-color: #ffffff;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Coffee Shop</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
