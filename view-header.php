@@ -29,6 +29,7 @@
 
 <link href="https://juxinglong.github.io/static/MIS3033.css" rel="stylesheet" />
 
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/36/36578.png"/>    
   </head>
   <body>
     <div class="container">
