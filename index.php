@@ -5,7 +5,7 @@ include "view-header.php";
 <script>
         .container {
             display: flex;
-            justify-content: space-between; 
+            justify-content: center; 
             align-items: center;
             gap: 10px; /* Adds space between columns */
             padding: 10px;
