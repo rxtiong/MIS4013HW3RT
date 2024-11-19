@@ -39,5 +39,5 @@
     options: {
       responsive: true,         // Ensure the chart is responsive
       maintainAspectRatio: false,
-    });
+    }});
 </script>
