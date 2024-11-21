@@ -3,11 +3,11 @@ $pageTitle = "Home";
 include "view-header.php";
 ?>
 
-
+<div><h1>Coffee Shop</h1><\div>
+    
     <div class="container mt-4">
         <div class="row align-items-start">
-        <div class="col-md-6">
-            <h1>Coffee Shop</h1>
+        <div class="col-md-6">           
             <img src="https://i.pinimg.com/originals/0f/ad/28/0fad289870489c693936a394112b07f2.jpg" style="height:300px;" />
         </div>
         <div class="col-md-6">     
