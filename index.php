@@ -1,11 +1,13 @@
 <?php 
 $pageTitle = "Home";
 include "view-header.php";
+<head>
 <script>
 function myFunction() {
   alert("Page is loaded");
 }
 </script>
+  </head>
 ?>
 
 <div><h1>Coffee Shop</h1></div>
