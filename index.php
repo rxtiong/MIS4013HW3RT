@@ -3,7 +3,7 @@ $pageTitle = "Home";
 include "view-header.php";
 ?>
 
-<div><h1>Coffee Shop</h1><\div>
+<div><h1>Coffee Shop</h1></div>
     
     <div class="container mt-4">
         <div class="row align-items-start">
