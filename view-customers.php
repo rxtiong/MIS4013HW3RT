@@ -21,7 +21,7 @@
       <th>Email</th>
       <th>Phone</th>
       <th>Order ID</th>
-      <th></th>
+      <th>All Orders</th>
       <th>Edit</th>
       <th>Delete</th>
       </tr>      
