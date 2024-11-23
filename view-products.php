@@ -18,7 +18,9 @@
       <th>Order ID</th>
       <th>Product Name</th>
       <th>Category</th>
-      <th>Price</th>      
+      <th>Price</th>  
+        <th>Edit</th>
+        <th>Delete</th>
       </tr>      
     </thead>
     <tbody>
