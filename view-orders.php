@@ -19,8 +19,8 @@
       <th>Date</th>
       <th>Total Amount</th>
       <th>Product ID</th>         
-        <th></th>
-        <th></th>
+        <th>Edit</th>
+        <th>Delete</th>
         <th></th>
       </tr>      
     </thead>
