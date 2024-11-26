@@ -66,3 +66,12 @@
     </div>
   </div>
 </nav>
+
+
+  <style>
+  .navbar-nav .nav-link:hover {
+    background-color: #darkbrown; /* Customize the hover background */
+    color: black; /* Customize the text color */
+    border-radius: 4px; /* Optional for aesthetics */
+  }
+</style>
