@@ -8,7 +8,7 @@ function myFunction() {
   alert("Page is loaded");
 }
 </script>
-
+<body onload="myFunction()">
 <div><h1>Coffee Shop</h1></div>
     
     <div class="container mt-4">
@@ -23,6 +23,7 @@ function myFunction() {
         </div>
     </div>   
     </div>
+</body>
 <?php 
 include "view-footer.php";
 ?>
