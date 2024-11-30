@@ -9,7 +9,11 @@ function myFunction() {
 }
 </script>
 <body onload="myFunction()">
-<div class="text-center mb-4"><h1>Coffee Shop</h1></div>
+<div class="text-center mb-4">
+  <div class="row align-items-start">
+    <h1>Coffee Shop</h1>
+  </div>
+</div>
     
     <div class="container mt-4">
         <div class="row align-items-start">
