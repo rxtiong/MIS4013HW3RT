@@ -73,6 +73,6 @@
   .navbar-nav .nav-link:hover {
     background-color: #8B4513; /* Customize the hover background */
     color: black; /* Customize the text color */
-    border-radius: 3; /* Optional for aesthetics */
+    border-radius: 2px; /* Optional for aesthetics */
   }
 </style>
