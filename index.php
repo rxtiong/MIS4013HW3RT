@@ -20,10 +20,11 @@ function myFunction() {
         <div class="col-md-6">           
             <img src="https://i.pinimg.com/originals/0f/ad/28/0fad289870489c693936a394112b07f2.jpg" style="height:300px;" />
         </div>
-        <div class="col-md-6">     
-            <p>This webpage shows customer data, order information, product information, and employee information and data. Customers have one order and employees have one order, but an order 
-            can have multiple customers and/or employees. Orders contain one product, but products can be in multiple orders.</p>
-    <p>Each page is customizable for the user. They can add, edit, or delete any information on the webpage. </p>
+        <div class="col-md-6">    
+            <p>Welcome to the Coffee Shop management page!</p>
+            <p>This webpage shows customer data, order information, product information, and employee information and data. </p>
+            <p>Each page is customizable for the user. They can add, edit, or delete any information on the webpage. </p>
+            <p>Employee Chart shows each employee and how many orders they have fulfilled.</p>
         </div>
     </div>   
     </div>
